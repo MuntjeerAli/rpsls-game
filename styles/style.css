@@ -1,20 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 16px;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    background: rgb(95,109,179);
-    background: radial-gradient(circle, rgba(95,109,179,1) 0%, 
-    rgba(156,84,198,1) 36%, rgba(242,241,118,1) 63%, 
-    rgba(224,89,116,1) 100%);
+    background: rgb(95, 109, 179);
+    background: linear-gradient(90deg,
+            rgba(95, 109, 179, 1) 0%, rgba(156, 84, 198, 1) 28%, rgba(242, 241, 118, 1) 53%,
+            rgba(224, 89, 116, 1) 100%);
     height: 100vh;
+}
+
+.container {
+    width: 45%;
+    background-color: white;
+    padding: 4rem 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.20);
+}
+
+header {
+    min-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+header .title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+
+.scores p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.weapons {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.weapons button {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: navy;
+    color: antiquewhite;
+    font-size: 2rem;
+    border: none;
+}
+
+.weapons button:hover {
+    background-color: darkcyan;
+}
+
+.details {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.scores,
+.details {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#result {
+    width: 180px;
+    padding: 10px 0;
+    margin: 30px auto;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#user_choice,
+#computer_choice {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+span {
+    font-weight: 600;
 }
