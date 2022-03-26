@@ -43,15 +43,22 @@ header .heading{
     color: darkblue;
     padding-bottom: 1rem;
 }
+
+header .heading p{
+    font-size: 1rem;
+}
+
 header .title {
     width: 100%;
     font-weight: 700;
     font-size: 1.2rem;
     line-height: 1.5rem;
-    gap: 1rem;
+    gap: 1.5rem;
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .scores{
@@ -132,7 +139,7 @@ span {
 }
 
 
-@media (max-width: 760px){
+@media (max-width: 960px){
     .body{
         height: 100vh;
     }
